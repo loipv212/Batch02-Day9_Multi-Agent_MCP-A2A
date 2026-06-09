@@ -151,6 +151,10 @@ def aggregate_results(state: State) -> dict:
     
     combined = "\n\n".join(sections)
     
+    print("\n--- DEBUG: DỮ LIỆU TỪ CÁC AGENTS ---")
+    print(combined)
+    print("-------------------------------------\n")
+    
     prompt = f"""Tổng hợp các phân tích sau thành một báo cáo pháp lý hoàn chỉnh:
 
 {combined}
